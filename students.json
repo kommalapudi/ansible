@@ -1,0 +1,20 @@
+{
+    "firstname": "chaitanya sharma",
+    "dob": "1993-06-13"
+    "addresses": [
+        {
+            "type": "perm",
+            "flatnumber":104,
+            "street": "balajinagar",
+            "city": "nellore"
+        },
+        {
+            "type": "current",
+            "flatnumber": "104"
+            "street":"balajinagar",
+            "city": "nellore"
+
+        }
+    ]
+    "skills": ["java", "devops", "cloud"]
+}

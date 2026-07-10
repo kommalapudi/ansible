@@ -1,0 +1,10 @@
+<student>
+  <Firstname>chai</Firstname>
+  <DOB>1993-06-13</DOB>
+  <Email>kcdevops@gmail.com</Email>
+  <Address>
+    <Flatnumber>401</Flatnumber>
+    <Street>balajinagar</Street>
+    <City>Nellore</City>
+  </Address>
+</student>

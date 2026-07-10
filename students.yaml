@@ -1,0 +1,15 @@
+- name: "kc"
+  dob: "1993-06-13"
+  mobilenumber: 900212424
+  address:
+  - flatno: 401
+    street: "ushodaya enclave"
+    city: hyderabad
+    type: current
+  
+  - flatno: 401
+    street: "ushodaya enclave"
+    city: hyderabad
+    type: permanent
+
+
