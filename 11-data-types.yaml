@@ -1,0 +1,24 @@
+- name: data types in ansible 
+  hosts: web
+  become: true
+  vars:
+    PROGRAM: "DevsecOps with AWS" # string
+    DURATION: 140 # integer 
+    IS_LIVE: true # boolean
+    DETAILS: # map/dictionary
+      MONTHS: 4
+      TRAINER: "self"
+  TOPICS: # list
+    - ansible
+    - docker
+    - kubernetes
+  tasks:
+  - name: print program details
+    ansible.builtin.debug:
+      msg: |
+        Program is: {{ PROGRAM }}
+        Duration is: {{ DURATION }}
+        Is live: {{ IS_LIVE }}
+        Months: {{ DETAILS.MONTHS }}
+        Trainer: {{ DETAILS.TRAINER }}
+        Topics are: {{ TOPICS }}
