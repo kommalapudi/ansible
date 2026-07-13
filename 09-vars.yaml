@@ -1,0 +1,7 @@
+- name: variables from args
+  hosts: web
+  become: true
+  tasks:
+  - name: print variables from args
+    ansible.builtin.debug:
+      msg: My daughter name is {{ NAME }}
