@@ -8,7 +8,7 @@
     DETAILS: # map/dictionary
       MONTHS: 4
       TRAINER: "self"
-  TOPICS: # list
+    TOPICS: # list
     - ansible
     - docker
     - kubernetes
