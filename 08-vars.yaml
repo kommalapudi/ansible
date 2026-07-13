@@ -1,0 +1,9 @@
+- name: playbook level variables
+  hosts: web
+  become: true
+  tasks:
+  - name: print course details
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+      msg: "Course is: {{ COURSE }}
