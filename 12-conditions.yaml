@@ -1,0 +1,11 @@
+- name: conditions example
+  hosts: local
+  connections: local
+  become: true
+  vars:
+    IS_LIVE: true
+  tasks:
+  - name: check live or not
+    ansible.builtin.debug:
+      msg: "This is live environment"
+    when: IS_LIVE
