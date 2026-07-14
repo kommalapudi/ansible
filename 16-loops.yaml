@@ -5,7 +5,7 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "{{ item }}"
+      msg: "{{ item }}" # item is reserverd keyword in ansible for loops
     loop:
       - chaitanya
       - hari
