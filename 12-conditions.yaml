@@ -1,6 +1,6 @@
 - name: conditions example
   hosts: local
-  connections: local
+  connection: local
   become: true
   vars:
     IS_LIVE: true
