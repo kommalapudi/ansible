@@ -4,6 +4,10 @@
   become: true
   tasks:
   - name: command module test
-    ansible.builtin.command: cat /etc/passwd | grep root
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: users_output
-    
+
+  - name: print users output
+    ansible.builtin.debug:
+      msg: "{{ users_output.stdout_lines }}"
