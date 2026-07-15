@@ -1,6 +1,16 @@
 - name: Hello World
-  hosts: web
+  hosts: local
   tasks:
   - name: Print Hello World
     ansible.builtin.debug:
       msg: "Hello Klinkaara"
+  
+- name: PLAY-2
+  hosts: local
+  connection: local
+  become: true
+  tasks:
+  - name: play-2 and task-1
+    ansible.builtin.debug:
+      msg: "hello from play-2 and task-1"
+
