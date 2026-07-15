@@ -13,6 +13,8 @@
       msg: "{{ user_output }}"
 
   - name: create user
-    ansible.builtin.user: useradd roboshop
+    ansible.builtin.user:
+      name: roboshop
+      state: present
     when: user_output.rc != 0
   
